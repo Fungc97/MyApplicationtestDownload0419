@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 showProgressDialog(context,"downloading...");
                Thread t= new Thread(new Runnable() {
-                    public void run() {
+                    public void run() {//test
                         DownloadFiles("http://sthsvr80.sth.com/lis_pdf/test/testDrawOnPdfDiectly/dc_original2.pdf");progressDialog.dismiss();
                     }
                 });
